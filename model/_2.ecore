@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="_2" nsURI="http://cpe.mitre.org/naming/2.0" nsPrefix="_2">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value=" "/>
+  </eAnnotations>
+  <eAnnotations>
+    <details key="appinfo" value="&#xA;            &lt;schema>CPE 2.3 Naming&lt;/schema>&#xA;            &lt;author>Adam Halbardier&lt;/author>&#xA;            &lt;version>2.3&lt;/version>&#xA;            &lt;date>2011-07-29&lt;/date>&#xA;        "/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EDataType" name="Cpe22Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Define the format for acceptable CPE Names. A URN format is used with the&#xA;                id starting with the word cpe followed by :/ and then some number of individual components separated by&#xA;                colons."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="cpe22Type"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#anyURI"/>
+      <details key="pattern" value="[c][pP][eE]:/[AHOaho]?(:[A-Za-z0-9\._\-~%25]*){0,6}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Cpe23Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Define the format for acceptable CPE Names. A string format is used with&#xA;                the id starting with the word cpe:2.3 followed by : and then some number of individual components&#xA;                separated by colons."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="cpe23Type"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+      <details key="pattern" value="cpe:2\.3:[aho\*\-](:(((\?*|\*?)([a-zA-Z0-9\-\._]|(\\[\\\*\?!&quot;#$$%25&amp;'\(\)\+,/:;&lt;=>@\[\]\^`\{\|}~]))+(\?*|\*?))|[\*\-])){5}(:(([a-zA-Z]{2,3}(-([a-zA-Z]{2}|[0-9]{3}))?)|[\*\-]))(:(((\?*|\*?)([a-zA-Z0-9\-\._]|(\\[\\\*\?!&quot;#$$%25&amp;'\(\)\+,/:;&lt;=>@\[\]\^`\{\|}~]))+(\?*|\*?))|[\*\-])){4}"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"
+            class="oasis.names.tc.ciq.xsdschema.xAL._2._0._0Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_0"
+            class="oasis.names.tc.ciq.xsdschema.xAL._2._0.util._0ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://www.w3.org/1999/xlink"
+            class="org.w3._1999.xlink.XlinkPackage"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="xlink"
+            class="org.w3._1999.xlink.util.XlinkResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://www.w3.org/XML/1998/namespace"
+            class="org.w3.xml._1998.namespace.NamespacePackage"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="namespace"
+            class="org.w3.xml._1998.namespace.util.NamespaceResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://scap.nist.gov/schema/asset-identification/1.1"
+            class="gov.nist.scap.schema.asset.identification._1._1Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_1"
+            class="gov.nist.scap.schema.asset.identification._1.util._1ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://scap.nist.gov/schema/reporting-core/1.1"
+            class="gov.nist.scap.schema.reporting.core._1._1Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_1"
+            class="gov.nist.scap.schema.reporting.core._1.util._1ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://scap.nist.gov/schema/asset-reporting-format/1.1"
+            class="gov.nist.scap.schema.asset.reporting.format._1._1Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_1"
+            class="gov.nist.scap.schema.asset.reporting.format._1.util._1ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="http://cpe.mitre.org/naming/2.0"
+            class="org.mitre.cpe.naming._2._2Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_2"
+            class="org.mitre.cpe.naming._2.util._2ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <package
+            uri="urn:oasis:names:tc:ciq:xsdschema:xNL:2.0"
+            class="oasis.names.tc.ciq.xsdschema.xNL._2._0._0Package"
+            genModel="model/asset-reporting-format_1.1.0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated asset-reporting-format_1.1.0 -->
+      <parser
+            type="_0"
+            class="oasis.names.tc.ciq.xsdschema.xNL._2._0.util._0ResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

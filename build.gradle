@@ -1,0 +1,52 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+group = 'iox.emf'
+version = '0.0.1'
+
+configure(install.repositories.mavenInstaller) {
+    pom.project {
+        groupId group
+        artifactId 'arf2emf'
+        inceptionYear '2018'
+        packaging 'jar'
+    }
+}
+
+repositories {
+    maven {url 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath;}
+    jcenter()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+            srcDirs 'gen/main/java'
+         }
+    }
+    test {
+        java {
+            srcDirs 'src/test/java'
+         }
+    }
+}
+
+ jar {
+     from sourceSets.main.allSource
+ }
+ 
+dependencies {
+    compile 'org.eclipse.emf:org.eclipse.emf.common:${emf.ver}'
+    compile 'org.eclipse.emf:org.eclipse.emf.ecore:${emf.ver}'
+    compile 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:${emf.ver}'
+    compile 'commons-io:commons-io:2.5'
+    compile 'org.slf4j:slf4j-simple:1.7.13'
+    compile 'org.apache.logging.log4j:log4j-core:${log.ver}'
+    compile 'org.apache.logging.log4j:log4j-api:${log.ver}'
+    compile 'com.lmax:disruptor:3.3.6'
+    testCompile 'iox.emf:sds4emf:0.0.1'
+    testCompile 'junit:junit:4.+'
+}
