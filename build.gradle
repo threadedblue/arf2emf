@@ -27,7 +27,7 @@ sourceSets {
             srcDirs 'gen/main/java'
          }
     }
-    test {
+    testt {
         java {
             srcDirs 'src/test/java'
          }
@@ -39,14 +39,15 @@ sourceSets {
  }
  
 dependencies {
-    compile 'org.eclipse.emf:org.eclipse.emf.common:${emf.ver}'
-    compile 'org.eclipse.emf:org.eclipse.emf.ecore:${emf.ver}'
-    compile 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:${emf.ver}'
-    compile 'commons-io:commons-io:2.5'
-    compile 'org.slf4j:slf4j-simple:1.7.13'
-    compile 'org.apache.logging.log4j:log4j-core:${log.ver}'
-    compile 'org.apache.logging.log4j:log4j-api:${log.ver}'
-    compile 'com.lmax:disruptor:3.3.6'
-    testCompile 'iox.emf:sds4emf:0.0.1'
-    testCompile 'junit:junit:4.+'
+    compile "org.eclipse.emf:org.eclipse.emf.common:${emfver}"
+    compile "org.eclipse.emf:org.eclipse.emf.ecore:${emfver}"
+    compile "org.eclipse.emf:org.eclipse.emf.ecore.xmi:${emfver}"
+    compile "commons-io:commons-io:2.5"
+    compile "org.slf4j:slf4j-simple:1.7.13"
+    compile "org.apache.logging.log4j:log4j-core:${logver}"
+    compile "org.apache.logging.log4j:log4j-api:${logver}"
+    compile "com.lmax:disruptor:3.3.6"
+    testCompile "iox.emf:sds4emf:0.0.1"
+    testCompile "junit:junit:4.+"
 }
+
