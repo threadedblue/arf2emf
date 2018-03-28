@@ -36,7 +36,7 @@ public class ARFTest {
 	
 	@Test
 	public void testDe_Serialize() {
-		String[] ss = getFile("arf.xml");
+		String[] ss = getFile("ec2.xml");
 		StringReader reader = new StringReader(ss[1]);
 		EObject eObject = Deserialize.it(reader, ss[0]);
 		assertNotNull(eObject);
